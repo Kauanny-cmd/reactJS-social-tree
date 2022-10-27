@@ -1,41 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color:var(--purple);
+    background-color: var(--body-bg-color);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+a{
+    color: var(--purple);
+    text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
+.container{
+    margin: 0 auto;
+    width: 400px;
+}
+
+.profile{
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.profile img{
+    margin: 15px;
+    width: 190px;
+    border-radius: 50%;
+    border: 4px groove var(--purple);
+}
+
+.profile p{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-weight: 600;
+}
+
+.icons img{
+    margin: 5px;
+}
+
+a:hover{
+    transform: scale(1.2);
+}
+
+.icons img:hover{
+    transform: scale(1.4);
+}
+
+.profile p:hover{
+    transform: scale(1.2);
+}
+
+.footer p{
+    padding: 5px;
+    font-weight: 300;
 }

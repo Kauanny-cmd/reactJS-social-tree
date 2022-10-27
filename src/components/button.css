@@ -1,0 +1,21 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+.links a{
+    font-weight: 600;
+    width: 280px;
+    height: 40px;
+    border: 2px solid var(--purple);
+    margin: 10px;
+    padding-top: 7px;
+    border-radius: 5px;
+}   
+
+.links{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
